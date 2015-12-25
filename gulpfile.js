@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var coffee = require('gulp-coffee');
 var imagemin = require('gulp-imagemin');
+var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 

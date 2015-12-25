@@ -9,6 +9,12 @@ body
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
 
+h1, h2, h3, h4, h5, h6, p, div
+  & > :first-child
+    margin-top: 0 !important
+  & > :last-child
+    margin-bottom: 0 !important
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
   font-weight: 200
