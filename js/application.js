@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
-  var content = $(".jumbotron .content")
-  content.css({'opacity': 0, 'marginTop': '8px'})
+  var content = $(".jumbotron .jumbotron-content")
+  content.css({'opacity': 0, 'top': '8px'})
   content.animate({
     'opacity': 1, 
-    'marginTop': '0px'
+    'top': '0px'
   }, 600, "swing")
 
   var i = 0
