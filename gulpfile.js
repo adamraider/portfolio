@@ -22,7 +22,12 @@ gulp.task('sass', function() {
         this.emit("end");
     }}))
     .pipe(sass({indentedSyntax: true}).on('error', util.log))
-    .pipe(gulp.dest('./build/css/'))
+    .pipe(concat("application.css"))
+    .pipe(gulp.dest('./build/css'))
+    .pipe(rename("application.min.css"))
+    .pipe(uglify())
+    .pipe(gulp.dest("./build/css"))
+    .pipe(browserSync.reload({stream:true}))
     .pipe(reload({stream: true}));
 });
 
@@ -45,7 +50,9 @@ gulp.task('image', function () {
       console.log(error.message);
       this.emit("end");
   }}))
-  .pipe(imagemin().on('error', util.log))
+  .pipe(imagemin({
+    progressive: true
+  }))
   .pipe(gulp.dest('./build/img/'))
   .pipe(reload({stream: true}));
 });
@@ -63,15 +70,6 @@ gulp.task('js', function () {
     .pipe(uglify())
     .pipe(gulp.dest("./build/js"))
     .pipe(browserSync.reload({stream:true}))
-});
-
-gulp.task('coffee', function() {
-  gulp.src('./src/coffee/*.coffee')
-    .pipe(coffee().on('error', util.log))
-    .pipe(concat('scripts.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./build/js/'))
-    .pipe(reload({stream: true}));
 });
 
 gulp.task('deploy', function() {

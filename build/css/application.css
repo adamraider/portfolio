@@ -1896,8 +1896,8 @@ body {
   background-color: #FAFAFA;
   color: #131313; }
 
-.gray {
-  background-color: #ccc;
+.white {
+  background-color: #fff;
   color: #131313; }
 
 .dark {
@@ -2096,3 +2096,8 @@ ul.skill-list {
 
 #footer h4 {
   margin-bottom: 2px; }
+
+#projects {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center; }
