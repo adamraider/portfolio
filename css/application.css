@@ -1807,18 +1807,18 @@ hr {
   height: 0; }
 
 a {
-  color: #3a7bd5;
+  color: #17afee;
   text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
-  color: #8eb3e7; }
+  color: #76d0f5; }
 
 ::selection {
-  background: #3a7bd5; }
+  background: #17afee; }
 
 ::-moz-selection {
-  background: #3a7bd5; }
+  background: #17afee; }
 
 img::selection {
   background: transparent; }
@@ -1827,7 +1827,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #3a7bd5; }
+  -webkit-tap-highlight-color: #17afee; }
 
 .jumbotron {
   width: 100%;
@@ -1962,12 +1962,12 @@ form .field {
     margin-bottom: 4px; }
   form .field input, form .field textarea {
     transition: all 0.1s ease-in;
-    border: 2px solid #3a7bd5;
+    border: 2px solid #17afee;
     background-color: transparent;
     position: relative;
     z-index: 10; }
     form .field input:focus, form .field input:valid, form .field textarea:focus, form .field textarea:valid {
-      background-color: #3a7bd5;
+      background-color: #17afee;
       color: #FAFAFA; }
   form .field:not(:last-of-type) {
     margin-bottom: 10px; }
@@ -1985,10 +1985,10 @@ form input, form textarea {
 a.button, input[type="submit"].button {
   position: relative;
   padding: 10px 20px;
-  border: 3px solid #3a7bd5;
+  border: 3px solid #17afee;
   background-color: transparent;
   text-transform: uppercase;
-  color: #3a7bd5;
+  color: #17afee;
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
@@ -1996,7 +1996,7 @@ a.button, input[type="submit"].button {
   width: auto; }
   a.button:hover, a.button:active, a.button:focus, input[type="submit"].button:hover, input[type="submit"].button:active, input[type="submit"].button:focus {
     padding: 10px 24px;
-    background-color: #3a7bd5;
+    background-color: #17afee;
     outline: none;
     color: #FAFAFA;
     text-decoration: none; }
@@ -2087,7 +2087,7 @@ ul.skill-list {
   flex-wrap: wrap;
   padding: 0; }
   ul.skill-list li.skill-item {
-    background-color: coral;
+    background-color: #17afee;
     display: inline-block;
     color: #FAFAFA;
     margin: 0px 4px 8px 4px;
