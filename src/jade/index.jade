@@ -6,22 +6,71 @@ html(lang="en")
     
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="shortcut icon" href="/assets/img/favicon/favicon.ico")
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
     link(rel="stylesheet" href="/css/application.css")
   body
     .jumbotron
-      .content
-        h1 Hi! I'm Adam,
-        #text_rotator_wrapper
-          span.pre-text and I&nbsp;
-          ul#text_rotator
-            li: span build web applications
-            li: span make music
-          span .
-    .content-area
+      .jumbotron-content
+        .flex-wrapper
+          h1 Hi! I'm Adam,
+          #text_rotator_wrapper
+            span.pre-text and I&nbsp;
+            ul#text_rotator
+              li: span build web applications
+              li: span make music
+              li: span want to talk to you
+            span .
+          a(href="#").button Available for Hire
+      .jumbotron-overlay
+      .jumbotron-bg
+    .content-area.light
       .container
         .row
-          .col-md-12
-            h1 Projects
-            p projects...
+          .col-md-6.col-md-offset-3
+            h2.text-center Skills
+            ul.skill-list
+              li.skill-item HTML
+              li.skill-item CSS
+              li.skill-item JavaScript
+              li.skill-item jQuery
+              li.skill-item Ruby
+              li.skill-item Ruby on Rails
+              li.skill-item Bootstrap
+              li.skill-item Haml
+              li.skill-item Jade
+              li.skill-item Git / Github
+              li.skill-item Terminal
+              li.skill-item Responsive Design
+              li.skill-item UI / UX
+              li.skill-item SASS
+              li.skill-item SEO
+              li.skill-item Adobe Photoshop
+              li.skill-item Adobe After Effects
+              li.skill-item Heroku
+    .content-area.light
+      .container
+        .row
+          .col-md-6.col-md-offset-3
+            h2.text-center Projects
+            p Food truck risus sed fusce malesuada arcu vim sit vitae tellus tempus bibendum you probably haven't heard of them gravida undefined pellentesque proin auctor bahn mi. Auctor sapien nibh sapien nec laserdisc at sagittis metus auctor enim bicycle ipsum sapien eu quisque integer vegan. Urna justo sed proin proin cred diam arcu nibh malesuada eget hoodie maecenas auctor tellus sed nec before they sold out porttitor. Nam sit justo massa organic sodales rutrum sodales fusce quam skateboard bibendum ornare sit duis orci keytar ligula mauris. Rutrum porta ornare food truck nec ornare curabitur elementum eget cred diam ligula vulputate nam auctor organic gravida justo non. Elementum porttitor Austin quisque nulla malesuada quisque pharetra PBR at morbi justo in malesuada keytar amet diam mauris. Curabitur congue PBR maecenas gravida ipsum massa ultricies artisan porttitor eu pellentesque vivamus eu viral at integer at nulla.
+
+    .content-area.primary
+      .container
+        .row
+          .col-md-6.col-md-offset-3
+            h2.text-center Want to work together?
+            p Bicycle eu ut morbi ornare sit non nec ultricies maecenas vinyl sit arcu gravida urna non lorem cursus sapien. Sed fixie metus nec non nibh fusce porta lectus quisque sed artisan nec eros nulla sem. 
+            form
+              .field
+                label(for="name") Your name?
+                input(name="name" type="text", required)
+              .field
+                label(for="email") Your email?
+                input(name="email" type="text" required)
+              .field
+                label(for="message") What's up?
+                textarea(name="message" required)
+              .field
+                input(type="submit")
     script(src="https://code.jquery.com/jquery-2.1.4.min.js")
     script(src="/js/script.js")

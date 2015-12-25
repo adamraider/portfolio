@@ -1,0 +1,30 @@
+form
+	.field
+		position: relative
+		label
+			width: auto
+			display: block
+			transition: all 0.1s ease-in
+			margin-bottom: 4px
+		input, textarea
+			transition: all 0.1s ease-in
+			border: 2px solid rgba($white, 0.6)
+			position: relative
+			z-index: 10
+			&:focus
+				box-shadow: inset 0 0 3px $brand-primary;
+		&:not(:last-of-type)
+			margin-bottom: 10px
+	input, textarea
+		padding: 6px 18px
+		font-size: 22px
+		width: 100%
+		border: none
+		// border-bottom: 1px solid $brand-primary
+		outline: none
+		background: transparent !important
+		&:active, &:focus
+			outline: none
+	// input[type="submit"]
+	// 	width: auto
+	// 	float: right
