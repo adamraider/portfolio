@@ -25,8 +25,9 @@
         text-align: left
         white-space: nowrap
   a
+    +fancyUnderline( $color: $white, $bgcolor: transparent )
     transition: all 0.1s ease-in
-    color: #fff
-    text-decoration: underline 
+    color: $white
+    text-decoration: none 
     &:hover
       color: #fff

@@ -16,11 +16,11 @@ html(lang="en")
           #text_rotator_wrapper
             span.pre-text and I&nbsp;
             ul#text_rotator
-              li: span build web applications
-              li: span make music
-              li: span want to talk to you
+              li: span build <a href="#">web applications</a>
+              li: span make <a href="#">music</a>
+              li: span want to <a href="#">talk to you</a>
             span .
-          a(href="#").button Available for Hire
+          a(href="#").button.button-white Available for Hire
       .jumbotron-overlay
       .jumbotron-bg
     .content-area.light
@@ -67,10 +67,10 @@ html(lang="en")
                 input(name="email" type="text" required)
               .field
                 label(for="message") What's up?
-                textarea(name="message" required)
-              .field
-                input(type="submit")
-    .content-area.primary
+                textarea(name="message" rows="4" required)
+              .field.text-center
+                input.button(type="submit" value="Let's do this")
+    #footer.aside-area.primary
       .container
         .row
           .col-md-6.col-md-offset-3
