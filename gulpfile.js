@@ -61,7 +61,7 @@ gulp.task('js', function () {
   gulp.src('./src/js/**/*.js')
     .pipe(plumber({
       errorHandler: function (error) {
-        console.log(error.message);
+        console.log(error);
         this.emit("end");
     }}))
     .pipe(concat("application.js"))
