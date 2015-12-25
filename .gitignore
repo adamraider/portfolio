@@ -17,6 +17,4 @@ Temporary Items
 ### Sass ###
 .sass-cache
 
-dist
-build
 node_modules

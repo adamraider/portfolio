@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var coffee = require('gulp-coffee');
 var imagemin = require('gulp-imagemin');
 var rename = require('gulp-rename');
+var ghPages = require('gulp-gh-pages');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
@@ -46,6 +47,11 @@ gulp.task('coffee', function() {
     .pipe(uglify())
     .pipe(gulp.dest('./build/js/'))
     .pipe(reload({stream: true}));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('serve', function() {
