@@ -7,47 +7,78 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="shortcut icon" href="./assets/img/favicon/favicon.ico")
     link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel="stylesheet" href="./css/application.css")
   body
     .jumbotron
       .jumbotron-content
         .flex-wrapper
-          h1 Hi! I'm Adam,
-          #text_rotator_wrapper
+          h1.text-center Hi! I'm Adam,
+          #text_rotator_wrapper.jumbo-sub.hidden-xs.hidden-sm
             span.pre-text and I&nbsp;
             ul#text_rotator
               li: span build <a href="#projects">web applications</a>
+              li: span love Ruby on Rails
               li: span make <a href="http://youtube.com/ixraider" target="_blank">music</a>
               li: span want to <a href="#contact">talk to you</a>
             span .
-          a(href="#").button.button-white Available for Hire
+          span.jumbo-sub.visible-xs-inline.visible-sm-inline and I'm a full-stack rails developer.
+          a(href="#" title="Available for Hire").button.button-white Available for Hire
       .bg-overlay
       .jumbotron-bg
-    #skills.content-area.light
+    #experience.content-area.auto
+      .container
+        .row
+          .col-md-10.col-md-offset-1
+            .col-md-4
+              .exp-item
+                .exp-title
+                  i.fa.fa-coffee
+                  //- h3 Me
+                .exp-content
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              
+            .col-md-4
+              .exp-item
+                .exp-title
+                  i.fa.fa-magic
+                  //- h3 What
+                .exp-content
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              
+            .col-md-4
+              .exp-item
+                .exp-title
+                  i.fa.fa-code-fork
+                  //- h3 Why
+                .exp-content
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              
+    #skills.content-area.auto
       .container
         .row
           .col-md-6.col-md-offset-3
             h2.text-center Skills
             ul.skill-list
-              li.skill-item HTML
-              li.skill-item CSS
-              li.skill-item JavaScript
-              li.skill-item jQuery
-              li.skill-item Ruby
-              li.skill-item Ruby on Rails
-              li.skill-item Bootstrap
-              li.skill-item Haml
-              li.skill-item Jade
-              li.skill-item Git / Github
-              li.skill-item Terminal
-              li.skill-item Responsive Design
-              li.skill-item UI / UX
-              li.skill-item SASS
-              li.skill-item SEO
-              li.skill-item Adobe Photoshop
-              li.skill-item Adobe After Effects
-              li.skill-item Heroku
-    #projects.content-area.light
+              li.skill-item: a(href="#") HTML
+              li.skill-item: a(href="#") CSS
+              li.skill-item: a(href="#") JavaScript
+              li.skill-item: a(href="#") jQuery
+              li.skill-item: a(href="#") Ruby
+              li.skill-item: a(href="#") Ruby on Rails
+              li.skill-item: a(href="#") Bootstrap
+              li.skill-item: a(href="#") Haml
+              li.skill-item: a(href="#") Jade
+              li.skill-item: a(href="#") Git / Github
+              li.skill-item: a(href="#") Terminal
+              li.skill-item: a(href="#") Responsive Design
+              li.skill-item: a(href="#") UI / UX
+              li.skill-item: a(href="#") SASS
+              li.skill-item: a(href="#") SEO
+              li.skill-item: a(href="#") Adobe Photoshop
+              li.skill-item: a(href="#") Adobe After Effects
+              li.skill-item: a(href="#") Heroku
+    #projects.content-area.auto
       .content
         .container
           .row
@@ -72,8 +103,8 @@ html(lang="en")
                 label(for="message") What's up?
                 textarea(name="message" rows="4" required)
               .field.text-center
-                input.button(type="submit" value="Let's do this")
-    #footer.aside-area.primary
+                input.button(type="submit" value="Let's do this" title="Let's do this")
+    #footer.aside-area.dark
       .container
         .row
           .col-md-6.col-md-offset-3

@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
   var content = $(".jumbotron .jumbotron-content")
-  content.css({'opacity': 0, 'top': '8px'})
+  content.css({'opacity': 0.2, 'top': '8px'})
   content.animate({
     'opacity': 1, 
     'top': '0px'
-  }, 600, "swing")
+  }, 1000, "swing")
 
   var i = 0
   var rotator = $("ul#text_rotator")

@@ -24,11 +24,10 @@ gulp.task('sass', function() {
     .pipe(sass({indentedSyntax: true}).on('error', util.log))
     .pipe(concat("application.css"))
     .pipe(gulp.dest('./build/css'))
-    .pipe(rename("application.min.css"))
-    .pipe(uglify())
-    .pipe(gulp.dest("./build/css"))
-    .pipe(browserSync.reload({stream:true}))
-    .pipe(reload({stream: true}));
+    // .pipe(rename("application.min.css"))
+    // .pipe(uglify())
+    // .pipe(gulp.dest("./build/css"))
+    // .pipe(browserSync.reload({stream:true}))
 });
 
 gulp.task('jade', function() {
@@ -40,7 +39,7 @@ gulp.task('jade', function() {
     }}))
   	.pipe(jade({pretty: true}).on('error', util.log))
   	.pipe(gulp.dest('./build/'))
-  	.pipe(reload({stream: true}));
+  	.pipe(browserSync.reload({stream:true}))
 });
 
 gulp.task('image', function () {
@@ -54,7 +53,7 @@ gulp.task('image', function () {
     progressive: true
   }))
   .pipe(gulp.dest('./build/img/'))
-  .pipe(reload({stream: true}));
+  .pipe(browserSync.reload({stream:true}))
 });
 
 gulp.task('js', function () {

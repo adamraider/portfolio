@@ -6,55 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/application.css">
   </head>
   <body>
     <div class="jumbotron">
       <div class="jumbotron-content">
         <div class="flex-wrapper">
-          <h1>Hi! I'm Adam,</h1>
-          <div id="text_rotator_wrapper"><span class="pre-text">and I&nbsp;</span>
+          <h1 class="text-center">Hi! I'm Adam,</h1>
+          <div id="text_rotator_wrapper" class="jumbo-sub hidden-xs hidden-sm"><span class="pre-text">and I&nbsp;</span>
             <ul id="text_rotator">
               <li><span>build <a href="#projects">web applications</a></span></li>
+              <li><span>love Ruby on Rails</span></li>
               <li><span>make <a href="http://youtube.com/ixraider" target="_blank">music</a></span></li>
               <li><span>want to <a href="#contact">talk to you</a></span></li>
             </ul><span>.</span>
-          </div><a href="#" class="button button-white">Available for Hire</a>
+          </div><span class="jumbo-sub visible-xs-inline visible-sm-inline">and I'm a full-stack rails developer.</span><a href="#" title="Available for Hire" class="button button-white">Available for Hire</a>
         </div>
       </div>
       <div class="bg-overlay"></div>
       <div class="jumbotron-bg"></div>
     </div>
-    <div id="skills" class="content-area light">
+    <div id="experience" class="content-area auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-4">
+              <div class="exp-item">
+                <div class="exp-title"><i class="fa fa-coffee"></i>
+                </div>
+                <div class="exp-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="exp-item">
+                <div class="exp-title"><i class="fa fa-magic"></i>
+                </div>
+                <div class="exp-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="exp-item">
+                <div class="exp-title"><i class="fa fa-code-fork"></i>
+                </div>
+                <div class="exp-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills" class="content-area auto">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <h2 class="text-center">Skills</h2>
             <ul class="skill-list">
-              <li class="skill-item">HTML</li>
-              <li class="skill-item">CSS</li>
-              <li class="skill-item">JavaScript</li>
-              <li class="skill-item">jQuery</li>
-              <li class="skill-item">Ruby</li>
-              <li class="skill-item">Ruby on Rails</li>
-              <li class="skill-item">Bootstrap</li>
-              <li class="skill-item">Haml</li>
-              <li class="skill-item">Jade</li>
-              <li class="skill-item">Git / Github</li>
-              <li class="skill-item">Terminal</li>
-              <li class="skill-item">Responsive Design</li>
-              <li class="skill-item">UI / UX</li>
-              <li class="skill-item">SASS</li>
-              <li class="skill-item">SEO</li>
-              <li class="skill-item">Adobe Photoshop</li>
-              <li class="skill-item">Adobe After Effects</li>
-              <li class="skill-item">Heroku</li>
+              <li class="skill-item"><a href="#">HTML</a></li>
+              <li class="skill-item"><a href="#">CSS</a></li>
+              <li class="skill-item"><a href="#">JavaScript</a></li>
+              <li class="skill-item"><a href="#">jQuery</a></li>
+              <li class="skill-item"><a href="#">Ruby</a></li>
+              <li class="skill-item"><a href="#">Ruby on Rails</a></li>
+              <li class="skill-item"><a href="#">Bootstrap</a></li>
+              <li class="skill-item"><a href="#">Haml</a></li>
+              <li class="skill-item"><a href="#">Jade</a></li>
+              <li class="skill-item"><a href="#">Git / Github</a></li>
+              <li class="skill-item"><a href="#">Terminal</a></li>
+              <li class="skill-item"><a href="#">Responsive Design</a></li>
+              <li class="skill-item"><a href="#">UI / UX</a></li>
+              <li class="skill-item"><a href="#">SASS</a></li>
+              <li class="skill-item"><a href="#">SEO</a></li>
+              <li class="skill-item"><a href="#">Adobe Photoshop</a></li>
+              <li class="skill-item"><a href="#">Adobe After Effects</a></li>
+              <li class="skill-item"><a href="#">Heroku</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div id="projects" class="content-area light">
+    <div id="projects" class="content-area auto">
       <div class="content">
         <div class="container">
           <div class="row">
@@ -87,14 +124,14 @@
                 <textarea name="message" rows="4" required></textarea>
               </div>
               <div class="field text-center">
-                <input type="submit" value="Let's do this" class="button">
+                <input type="submit" value="Let's do this" title="Let's do this" class="button">
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div id="footer" class="aside-area primary">
+    <div id="footer" class="aside-area dark">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
