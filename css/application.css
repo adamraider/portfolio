@@ -1914,7 +1914,7 @@ body {
     display: none; }
 
 .aside-area {
-  padding: 40px 0px;
+  padding: 50px 0px;
   position: relative; }
 
 .light {
@@ -1979,8 +1979,7 @@ form .field {
     margin-bottom: 4px; }
   form .field input, form .field textarea {
     transition: all 0.1s ease-in;
-    border: 2px solid #17afee;
-    background-color: transparent;
+    background-color: #ccc;
     position: relative;
     z-index: 10; }
     form .field input:focus, form .field input:valid, form .field textarea:focus, form .field textarea:valid {
@@ -2136,16 +2135,22 @@ ul.skill-list {
   flex-wrap: wrap;
   padding: 0; }
   ul.skill-list li.skill-item {
-    border: 2px solid #FAFAFA;
+    position: relative;
     display: inline-block;
     color: #FAFAFA;
     margin: 0px 4px 8px 4px;
     padding: 4px 10px;
     list-style-type: none; }
+    ul.skill-list li.skill-item::after {
+      content: '';
+      display: block;
+      width: 100%;
+      background-color: #FAFAFA;
+      height: 1px; }
     ul.skill-list li.skill-item a {
       display: block;
       color: #FAFAFA; }
-      ul.skill-list li.skill-item a:hover {
+      ul.skill-list li.skill-item a:hover, ul.skill-list li.skill-item a:focus, ul.skill-list li.skill-item a:active {
         text-decoration: none; }
 
 #footer h4 {
@@ -2160,4 +2165,5 @@ ul.skill-list {
   #experience .exp-item .exp-title {
     margin: 0 0 20px 0; }
     #experience .exp-item .exp-title i {
-      font-size: 66px; }
+      font-size: 66px;
+      color: #767676; }
