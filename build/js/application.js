@@ -16,6 +16,9 @@ $(document).ready(function(){
 
   function startRotator() {
     setInterval(function() {
+      // Make sure previous animation has completed
+      // and animation queue is empty first.
+      rotator.stop( true, true )
       rotate()
     }, 3400)
   }
