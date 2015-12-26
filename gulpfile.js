@@ -24,10 +24,10 @@ gulp.task('sass', function() {
     .pipe(sass({indentedSyntax: true}).on('error', util.log))
     .pipe(concat("application.css"))
     .pipe(gulp.dest('./build/css'))
-    // .pipe(rename("application.min.css"))
-    // .pipe(uglify())
-    // .pipe(gulp.dest("./build/css"))
-    // .pipe(browserSync.reload({stream:true}))
+    .pipe(rename("application.min.css"))
+    .pipe(uglify())
+    .pipe(gulp.dest("./build/css"))
+    .pipe(browserSync.reload({stream:true}))
 });
 
 gulp.task('jade', function() {
