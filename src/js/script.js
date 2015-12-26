@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-  var content = $(".jumbotron .jumbotron-content")
-  content.css({'opacity': 0.3, 'top': '12px'})
-  content.animate({
-    'opacity': 1, 
-    'top': '0px'
-  }, 1000, "swing")
+  // var content = $(".jumbotron .jumbotron-content")
+  // content.css({'opacity': 0.3, 'top': '12px'})
+  // content.animate({
+  //   'opacity': 1, 
+  //   'top': '0px'
+  // }, 1000, "swing")
 
   var i = 0
   var rotator = $("ul#text_rotator")
@@ -20,34 +20,24 @@ $(document).ready(function(){
       // and animation queue is empty first.
       rotator.stop( true, true )
       rotate()
-    }, 3400)
+    }, 4000)
   }
   function rotate(){
     if(i < rotator_items.length - 1) {
-      i++
-      current_item = rotator_items.eq(i)
-      parent_item = rotator_items_parent.eq(i)
-      rotator.animate({
-        'width' : 0
-      }, 500, "swing")
-      rotator.animate({
-        'marginTop' : '-=' + parent_item.outerHeight()
-      }, 100, "swing")
-      rotator.animate({
-        'width' : current_item.width()
-      }, 1400, "swing")
+     i++
     } else {
       i = 0
-      current_item = rotator_items.eq(i)
-      rotator.animate({
-        'width' : 0
-      }, 500, "swing")
-      rotator.animate({
-        'marginTop' : '0',
-      }, 100, "swing")
-       rotator.animate({
-        'width' : current_item.width()
-      }, 1400, "swing")
     }
+    current_item = rotator_items.eq(i)
+    parent_item = rotator_items_parent.eq(i)
+    rotator.animate({
+      'width' : 0
+    }, 500, "swing")
+    rotator.animate({
+      'marginTop' : -1 * (i) * parent_item.outerHeight()
+    }, 100, "swing")
+    rotator.animate({
+      'width' : current_item.width()
+    }, 1400, "swing")
   }
 })
