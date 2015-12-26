@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   var content = $(".jumbotron .jumbotron-content")
-  content.css({'opacity': 0.2, 'top': '8px'})
+  content.css({'opacity': 0.3, 'top': '12px'})
   content.animate({
     'opacity': 1, 
     'top': '0px'
