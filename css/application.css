@@ -1750,7 +1750,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-family: Montserrat, "HelveticaNeue", Helvetica, Arial;
-  color: #000;
+  color: #131313;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
@@ -1835,7 +1835,7 @@ body {
   z-index: 20;
   background: #00d2ff;
   background: linear-gradient(to left, #00d2ff, #3a7bd5);
-  opacity: 0.3;
+  opacity: 0.2;
   width: 100%;
   height: 100%; }
 
@@ -1851,15 +1851,6 @@ body {
   left: 0;
   background-size: cover;
   background-position: center; }
-
-.auto:nth-of-type(2n) {
-  background-color: #FAFAFA;
-  color: #131313; }
-
-.auto:nth-of-type(2n + 1) {
-  background: #00d2ff;
-  background: linear-gradient(to left, #00d2ff, #3a7bd5);
-  color: #FAFAFA; }
 
 .jumbotron {
   width: 100%;
@@ -1921,12 +1912,8 @@ body {
   background-color: #FAFAFA;
   color: #131313; }
 
-.white {
-  background-color: #fff;
-  color: #131313; }
-
 .dark {
-  background-color: #131313;
+  background: linear-gradient(to left, #00d2ff, #3a7bd5);
   color: #FAFAFA; }
 
 .primary {
@@ -1979,11 +1966,11 @@ form .field {
     margin-bottom: 4px; }
   form .field input, form .field textarea {
     transition: all 0.1s ease-in;
-    background-color: #ccc;
+    background-color: #FAFAFA;
     position: relative;
     z-index: 10; }
     form .field input:focus, form .field input:valid, form .field textarea:focus, form .field textarea:valid {
-      background-color: #17afee;
+      background-color: #2A2A2A;
       color: #FAFAFA; }
   form .field:not(:last-of-type) {
     margin-bottom: 10px; }
@@ -2157,7 +2144,7 @@ ul.skill-list {
   margin-bottom: 2px; }
 
 #projects {
-  color: #FAFAFA; }
+  color: #131313; }
 
 #experience .exp-item {
   padding: 0 10px;
