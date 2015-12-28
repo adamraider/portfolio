@@ -32,27 +32,24 @@ html(lang="en")
       .container
         .row
           .col-md-10.col-md-offset-1
-            .col-sm-4
-              .exp-item
-                .exp-title
-                  i.fa.fa-coffee
-                  h3 About Adam
-                .exp-content
-                  p I'm a self taught developer, with a passion for music, good sushi, and chess.
-            .col-sm-4
-              .exp-item
-                .exp-title
-                  i.fa.fa-code
-                  h3 Tech Talk
-                .exp-content
-                  p You can often catch me on a Rails + Postgres stack. However, I love picking apart new tech!
-            .col-sm-4
-              .exp-item
-                .exp-title
-                  i.fa.fa-eye
-                  h3 Eye for Design
-                .exp-content
-                  p An application should not only work well, but feel great. User experience means everything.
+            .exp-item.col-sm-4
+              .exp-title
+                i.fa.fa-coffee
+                h3 About Adam
+              .exp-content
+                p I'm a self taught developer, with a passion for music, good sushi, chess, and oxford commas.
+            .exp-item.col-sm-4
+              .exp-title
+                i.fa.fa-code
+                h3 Tech Talk
+              .exp-content
+                p You can often catch me on a Rails&nbsp;+&nbsp;Postgres stack. However, I love learning new tools!
+            .exp-item.col-sm-4
+              .exp-title
+                i.fa.fa-eye
+                h3 Eye for Design
+              .exp-content
+                p A great application is one that's easy to use. User experience means everything to me.
     #skills.content-area.dark
       .container
         .row
@@ -81,7 +78,7 @@ html(lang="en")
       .content
         .container
           .row
-            .col-md-6.col-md-offset-3
+            .col-md-8.col-md-offset-2
               h2.text-center Recent Work
               .project-items
                 .row.project-item.text-justify
@@ -109,16 +106,19 @@ html(lang="en")
         .row
           .col-md-6.col-md-offset-3
             h2.text-center Drop me a line
-            form
+            form(action="//formspree.io/your@email.com" method="POST")
               .field
                 label(for="name") Your name, please?
                 input(name="name" type="text", required)
               .field
                 label(for="email") Email address?
-                input(name="email" type="text" required)
+                input(name="_replyto" type="text" required)
               .field
                 label(for="message") What's up?
                 textarea(name="message" rows="4" required)
+              .hidden
+                input(type="hidden" name="_subject" value="Hey Adam! (A message from http://adamraider.me)")
+                input(type="text" name="_gotcha" style="display:none")
               .field.text-center
                 input.button(type="submit" value="Let's do this" title="Let's do this")
     #footer.aside-area.light
@@ -127,6 +127,13 @@ html(lang="en")
           .col-md-6.col-md-offset-3
             .text-center
               h4 Adam Jesse Raider
-              p &copy; 2015
+              ul.nav-social
+                li: a(href="http://github.com/adamraider" target="_blank"): i.fa.fa-github-square
+                li: a(href="http://twitter.com/ixraider" target="_blank"): i.fa.fa-twitter-square
+                li: a(href="https://www.linkedin.com/in/adamjraider" target="_blank"): i.fa.fa-linkedin-square
+        .row
+          .col-xs-12
+            .text-right
+              p.muted &copy; 2015
     script(src="https://code.jquery.com/jquery-2.1.4.min.js")
     script(src="./js/application.min.js")

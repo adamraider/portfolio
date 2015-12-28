@@ -5,7 +5,7 @@ a.button
 		color: #fff
 		content: attr(title)
 		display: block
-		transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1)
+		transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1)
 		transform-origin: 50% 50% -2rem
 		top: 0
 		right: 0
@@ -18,12 +18,14 @@ a.button
 		border: 3px solid $brand-primary
 		color: $brand-primary
 		opacity: 1
+		z-index: 6
 	&::after
 		transform: rotateX(-90deg)
 		background-color: $brand-primary
 		border: 3px solid $brand-primary
 		color: $white
-		opacity: 0
+		opacity: 0.2
+		z-index: 10
 	padding: 10px 20px
 	color: transparent
 	display: block

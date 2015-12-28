@@ -1,3 +1,16 @@
 #footer
 	h4
 		margin-bottom: 2px
+	ul.nav-social
+		@include display(flex)
+		@include justify-content(center)
+		@include align-items(center)
+		margin: 0
+		padding: 0
+		li
+			float: left
+			list-style-type: none
+			margin: 0 10px
+			font-size: 30px
+			a
+				transition: all 0.1s ease-in

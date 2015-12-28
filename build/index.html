@@ -33,34 +33,28 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
-            <div class="col-sm-4">
-              <div class="exp-item">
-                <div class="exp-title"><i class="fa fa-coffee"></i>
-                  <h3>About Adam</h3>
-                </div>
-                <div class="exp-content">
-                  <p>I'm a self taught developer, with a passion for music, good sushi, and chess.</p>
-                </div>
+            <div class="exp-item col-sm-4">
+              <div class="exp-title"><i class="fa fa-coffee"></i>
+                <h3>About Adam</h3>
+              </div>
+              <div class="exp-content">
+                <p>I'm a self taught developer, with a passion for music, good sushi, chess, and oxford commas.</p>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="exp-item">
-                <div class="exp-title"><i class="fa fa-code"></i>
-                  <h3>Tech Talk</h3>
-                </div>
-                <div class="exp-content">
-                  <p>You can often catch me on a Rails + Postgres stack. However, I love picking apart new tech!</p>
-                </div>
+            <div class="exp-item col-sm-4">
+              <div class="exp-title"><i class="fa fa-code"></i>
+                <h3>Tech Talk</h3>
+              </div>
+              <div class="exp-content">
+                <p>You can often catch me on a Rails&nbsp;+&nbsp;Postgres stack. However, I love learning new tools!</p>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="exp-item">
-                <div class="exp-title"><i class="fa fa-eye"></i>
-                  <h3>Eye for Design</h3>
-                </div>
-                <div class="exp-content">
-                  <p>An application should not only work well, but feel great. User experience means everything.</p>
-                </div>
+            <div class="exp-item col-sm-4">
+              <div class="exp-title"><i class="fa fa-eye"></i>
+                <h3>Eye for Design</h3>
+              </div>
+              <div class="exp-content">
+                <p>A great application is one that's easy to use. User experience means everything to me.</p>
               </div>
             </div>
           </div>
@@ -100,7 +94,7 @@
       <div class="content">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-8 col-md-offset-2">
               <h2 class="text-center">Recent Work</h2>
               <div class="project-items">
                 <div class="row project-item text-justify">
@@ -138,18 +132,22 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <h2 class="text-center">Drop me a line</h2>
-            <form>
+            <form action="//formspree.io/your@email.com" method="POST">
               <div class="field">
                 <label for="name">Your name, please?</label>
                 <input name="name" type="text" required>
               </div>
               <div class="field">
                 <label for="email">Email address?</label>
-                <input name="email" type="text" required>
+                <input name="_replyto" type="text" required>
               </div>
               <div class="field">
                 <label for="message">What's up?</label>
                 <textarea name="message" rows="4" required></textarea>
+              </div>
+              <div class="hidden">
+                <input type="hidden" name="_subject" value="Hey Adam! (A message from http://adamraider.me)">
+                <input type="text" name="_gotcha" style="display:none">
               </div>
               <div class="field text-center">
                 <input type="submit" value="Let's do this" title="Let's do this" class="button">
@@ -165,7 +163,18 @@
           <div class="col-md-6 col-md-offset-3">
             <div class="text-center">
               <h4>Adam Jesse Raider</h4>
-              <p>&copy; 2015</p>
+              <ul class="nav-social">
+                <li><a href="http://github.com/adamraider" target="_blank"><i class="fa fa-github-square"></i></a></li>
+                <li><a href="http://twitter.com/ixraider" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/adamjraider" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="text-right">
+              <p class="muted">&copy; 2015</p>
             </div>
           </div>
         </div>
