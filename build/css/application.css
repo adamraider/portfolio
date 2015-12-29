@@ -2193,8 +2193,13 @@ ul.skill-list {
   color: #131313; }
   #projects .project-item {
     margin-bottom: 20px; }
-    #projects .project-item img {
+    #projects .project-item .project-image img {
       width: 100%; }
+    #projects .project-item .project-content p {
+      margin: 10px 20px; }
+    #projects .project-item .project-content hr {
+      margin: 40px 20px 0 20px;
+      padding-bottom: 2px; }
 
 #experience .exp-item {
   padding: 0 10px;
@@ -2205,6 +2210,13 @@ ul.skill-list {
     #experience .exp-item .exp-title i {
       font-size: 66px;
       color: #767676; }
+
+#experience .exp-content {
+  width: 100%;
+  text-align: center; }
+  #experience .exp-content p {
+    max-width: 400px;
+    margin: 0 auto; }
 
 @media (min-width: 768px) {
   #experience .exp-item {
