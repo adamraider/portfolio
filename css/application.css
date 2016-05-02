@@ -1762,7 +1762,8 @@ h1 > :last-child, h2 > :last-child, h3 > :last-child, h4 > :last-child, h5 > :la
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 200; }
+  font-weight: 200;
+  margin-bottom: 2.3rem; }
 
 .gigantic {
   font-size: 110px;
@@ -2191,15 +2192,55 @@ ul.skill-list {
 
 #projects {
   color: #131313; }
+  #projects .project-items {
+    margin-top: 40px; }
   #projects .project-item {
-    margin-bottom: 20px; }
+    margin: 0 0 40px 0; }
     #projects .project-item .project-image img {
       width: 100%; }
-    #projects .project-item .project-content p {
-      margin: 10px 20px; }
-    #projects .project-item .project-content hr {
-      margin: 40px 20px 0 20px;
-      padding-bottom: 2px; }
+    #projects .project-item .project-content {
+      padding: 0 40px; }
+      #projects .project-item .project-content hr {
+        margin: 40px 20px 0 20px;
+        padding-bottom: 2px; }
+    #projects .project-item .toolbox {
+      color: #919191;
+      font-size: 13px; }
+    #projects .project-item ul.tags {
+      margin: 0;
+      padding: 0 20px;
+      text-align: left; }
+      #projects .project-item ul.tags li {
+        display: inline-block;
+        padding: 0 12px;
+        height: 32px;
+        line-height: 32px;
+        background-color: #131313;
+        color: #FAFAFA;
+        margin-right: 15px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        position: relative; }
+        #projects .project-item ul.tags li:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 100%;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-bottom: 32px solid #131313;
+          border-left: 12px solid transparent; }
+        #projects .project-item ul.tags li:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 100%;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-top: 32px solid #131313;
+          border-right: 12px solid transparent; }
 
 #experience .exp-item {
   padding: 0 10px;
