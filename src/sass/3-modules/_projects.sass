@@ -1,14 +1,54 @@
 #projects
 	color: $black
+	.project-items
+		margin-top: 40px
 	.project-item
-		margin-bottom: 20px
+		margin: 0 0 40px 0
 		.project-image
 			img
 				width: 100%
 		.project-content
-			p
-				margin: 10px 20px
+			padding: 0 40px
 			hr
 				margin: 40px 20px 0 20px
 				padding-bottom: 2px
+		.toolbox
+			color: $gray-lighter
+			font-size: 13px
+		ul.tags
+			margin: 0
+			padding: 0 20px
+			text-align: left
+			$tag-height: 32px
+			li
+				display: inline-block
+				padding: 0 12px
+				height: $tag-height
+				line-height: $tag-height
+				background-color: $black
+				color: $white
+				margin-right: 15px
+				margin-bottom: 5px
+				font-size: 14px
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					right: 100%
+					bottom: 0
+					width: 0
+					height: 0
+					border-bottom: $tag-height solid $black
+					border-left: 12px solid transparent
+				&:after
+					content: ''
+					position: absolute
+					top: 0
+					left: 100%
+					bottom: 0
+					width: 0
+					height: 0
+					border-top: $tag-height solid $black
+					border-right: 12px solid transparent
 	@media (min-width: $screen-sm-min){}
