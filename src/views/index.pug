@@ -5,19 +5,25 @@ html(lang="en")
     title Adam Raider // Designer, Developer
     
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="shortcut icon" href="./assets/img/favicon/favicon.ico")
     link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel="stylesheet" href="./css/application.css")
 
+    link(rel="apple-touch-icon", sizes="180x180", href="./favicons/apple-touch-icon.png")
+    link(rel="icon", type="image/png", href="./favicons/favicon-32x32.png", sizes="32x32")
+    link(rel="icon", type="image/png", href="./favicons/favicon-16x16.png", sizes="16x16")
+    link(rel="manifest", href="./favicons/manifest.json")
+    link(rel="mask-icon", href="./favicons/safari-pinned-tab.svg", color="#5bbad5")
+    meta(name="theme-color", content="#ffffff")
+
     //- Emoji Support
-    script(src="//twemoji.maxcdn.com/2/twemoji.min.js?2.1.2")
+    script(src="//twemoji.maxcdn.com/2/twemoji.min.js")
 
   body
     .hero
       .hero--content.wow.fadeIn
         .flex-wrapper
-          h1.hero--heading Hi! I'm Adam,
+          h1.hero--heading Yo! I'm Adam,
           #text-rotator.text-rotator.hero--sub.hidden-xs.hidden-sm
             span.pre-text and I&nbsp;
             ul#text-rotator--list.text-rotator--list
@@ -36,64 +42,64 @@ html(lang="en")
         .row
           .col-md-10.col-md-offset-1.wow.fadeInRight
             h2 Hi there,
-            p I'm a developer + designer for all things web. I'm also an #[a(href="http://youtube.com/ixaider" target="_blank") electronic music producer], terrible chess player, #[a(href="https://en.wikipedia.org/wiki/Digital_nomad" target="_blank") digital nomad] and sushi connoisseur. 
+            p I'm a developer + designer for all things web. I'm also an #[a(href="http://youtube.com/ixaider" target="_blank") electronic music producer], amateur chess player, #[a(href="https://en.wikipedia.org/wiki/Digital_nomad" target="_blank") digital nomad] and sushi connoisseur. 
             p Unsatisfied with the status-quo of traditional higher education, I left my computer science program in favor of self-learning. I immersed myself in the field by moving into a #[a(href="https://en.wikipedia.org/wiki/Co-operative_living_arrangements" target="_blank") coliving] community in New York City where I met some lifelong mentors and friends.
-            p  Now I travel the world and work remotely for #[a(href="http://tokenly.com" target="_blank") Tokenly] where, using the #[a(href="https://en.wikipedia.org/wiki/Blockchain_(database)" target="_blank") blockchain], we are redefining what ownership means on the web.
+            p  Now I travel and work remotely for #[a(href="http://tokenly.com" target="_blank") Tokenly] where, using the #[a(href="https://en.wikipedia.org/wiki/Blockchain_(database)" target="_blank") blockchain], we are redefining what ownership means on the web.
             p I believe websites should make users happy. View some of my happy little projects below, or scroll even farther and send me some words.
             p.
               Thanks for reading,
               #[br]
               — A
-    #experience.content-area.alt-bottom.light
+    .exp--wrapper.content-area.alt-bottom.light
       .container
         .row
           .col-md-10.col-md-offset-1
-            .exp-item.col-sm-4
-              .exp-title.wow.bounceIn
+            .exp--item.col-sm-4
+              .exp--title.wow.bounceIn
                 img.exp--icon(src="./img/idea.png")
                 h3 Creative
-              .exp-content
-                p Builder at heart! Started with Lego now it's software.
-            .exp-item.col-sm-4
-              .exp-title.wow.bounceIn
+              .exp--content
+                p Builder at heart. Let's make a product together!
+            .exp--item.col-sm-4
+              .exp--title.wow.bounceIn
                 img.exp--icon(src="./img/web.png")
                 h3 Technical
-              .exp-content
-                p Love learning new tech, but I'll always use Sass.
-            .exp-item.col-sm-4
-              .exp-title.wow.bounceIn
+              .exp--content
+                p Always learning. Tools are temporary, principles are timeless.
+            .exp--item.col-sm-4
+              .exp--title.wow.bounceIn
                 img.exp--icon(src="./img/rocket.png")
                 h3 Beautiful
               .exp-content
-                p Design is about displaying information elegantly.
-    #skills.content-area.alt-bottom.dark
+                p Pixel perfect and responsive on iPhones, laptops and Teslas.
+    .content-area.alt-bottom.dark
       .container
         .row
           .col-md-6.col-md-offset-3
             h2.text-center Toolbox
-            ul.skill-list
-              li.skill-item: a(href="") HTML
-              li.skill-item: a(href="") CSS
-              li.skill-item: a(href="") SASS
-              li.skill-item: a(href="") JavaScript
-              li.skill-item: a(href="") jQuery
-              li.skill-item: a(href="") MVC
-              li.skill-item: a(href="") AngularJS
-              li.skill-item: a(href="") Ruby
-              li.skill-item: a(href="") Ruby on Rails
-              li.skill-item: a(href="") Haml
-              li.skill-item: a(href="") Jade / Pug
-              li.skill-item: a(href="") Git / Github
-              li.skill-item: a(href="") Terminal
-              li.skill-item: a(href="") Responsive Design
-              li.skill-item: a(href="") User Experience
-              li.skill-item: a(href="") SEO
-              li.skill-item: a(href="") Bootstrap
-              li.skill-item: a(href="") Gulp
-              li.skill-item: a(href="") PostgreSQL
-              li.skill-item: a(href="") Adobe Photoshop
-              li.skill-item: a(href="") Heroku
-              li.skill-item: a(href="") Sketch
+            ul.skill--list
+              li.skill--item: a(href="") HTML
+              li.skill--item: a(href="") CSS
+              li.skill--item: a(href="") SASS
+              li.skill--item: a(href="") JavaScript
+              li.skill--item: a(href="") jQuery
+              li.skill--item: a(href="") MVC
+              li.skill--item: a(href="") AngularJS
+              li.skill--item: a(href="") Ruby
+              li.skill--item: a(href="") Ruby on Rails
+              li.skill--item: a(href="") Haml
+              li.skill--item: a(href="") Jade / Pug
+              li.skill--item: a(href="") Git / Github
+              li.skill--item: a(href="") Terminal
+              li.skill--item: a(href="") Responsive Design
+              li.skill--item: a(href="") User Experience
+              li.skill--item: a(href="") SEO
+              li.skill--item: a(href="") Bootstrap
+              li.skill--item: a(href="") Gulp
+              li.skill--item: a(href="") PostgreSQL
+              li.skill--item: a(href="") Adobe Photoshop
+              li.skill--item: a(href="") Heroku
+              li.skill--item: a(href="") Sketch
     #projects.projects--wrapper.aside-area.light.alt-bottom
       .project--items
         .project--item
@@ -170,14 +176,14 @@ html(lang="en")
                 input(type="text" name="_gotcha" style="display:none")
               .field.text-center
                 input.btn.primary(type="submit" value="Let's chat!" title="Let's chat!")
-    #footer.footer.aside-area.light
+    .footer.aside-area.light
       .container
         .row
           .col-md-6.col-md-offset-3
             .text-center
-              .name-stamp Adam Raider
+              .footer--name-stamp Adam Raider
               p made with ❤️ on #[a(href="http://github.com/adamraider/portfolio-2016") github]
-              ul.nav-social
+              ul.footer--social
                 li: a(href="http://github.com/adamraider" target="_blank"): i.fa.fa-github-square
                 li: a(href="http://twitter.com/ixraider" target="_blank"): i.fa.fa-twitter-square
                 li: a(href="https://www.linkedin.com/in/adamjraider" target="_blank"): i.fa.fa-linkedin-square
