@@ -2,139 +2,183 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Adam Raider</title>
+    <title>Adam Raider // Designer, Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/application.css">
+    <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.1.2"></script>
   </head>
   <body>
-    <div class="jumbotron">
-      <div class="jumbotron-content">
+    <div class="hero">
+      <div class="hero--content wow fadeIn">
         <div class="flex-wrapper">
-          <h1 class="text-center">Hi! I'm Adam,</h1>
-          <div id="text_rotator_wrapper" class="jumbo-sub hidden-xs hidden-sm"><span class="pre-text">and I&nbsp;</span>
-            <ul id="text_rotator">
+          <h1 class="hero--heading">Hi! I'm Adam,</h1>
+          <div class="text-rotator hero--sub hidden-xs hidden-sm" id="text-rotator"><span class="pre-text">and I&nbsp;</span>
+            <ul class="text-rotator--list" id="text-rotator--list">
               <li><span>build <a href="#projects">web applications</a></span></li>
               <li><span>play chess</span></li>
               <li><span>make <a href="http://youtube.com/ixraider" target="_blank">music</a></span></li>
-              <li><span>am self-taught</span></li>
-              <li><span>love great design</span></li>
+              <li><span>love design</span></li>
               <li><span>want to <a href="#contact">talk to you</a></span></li>
             </ul><span>.</span>
-          </div><span class="jumbo-sub visible-xs-inline visible-sm-inline">and I'm a full-stack rails developer.</span><a href="#contact" title="Available for Hire" class="button button-white">Available for Hire</a>
+          </div><span class="hero--sub visible-xs-inline visible-sm-inline">and I'm a full-stack developer.</span><a class="button-cta" href="#contact" title="Talk To Me">Available for Hire</a>
         </div>
       </div>
       <div class="bg-overlay"></div>
-      <div class="jumbotron-bg"></div>
+      <div class="hero--bg"></div>
     </div>
-    <div id="experience" class="content-area light">
+    <div class="content-area alt-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 wow fadeInRight">
+            <h2>Hi there,</h2>
+            <p>I'm a developer + designer for all things web. I'm also an <a href="http://youtube.com/ixaider" target="_blank">electronic music producer</a>, terrible chess player, <a href="https://en.wikipedia.org/wiki/Digital_nomad" target="_blank">digital nomad</a> and sushi connoisseur. </p>
+            <p>Unsatisfied with the status-quo of traditional higher education, I left my computer science program in favor of self-learning. I immersed myself in the field by moving into a <a href="https://en.wikipedia.org/wiki/Co-operative_living_arrangements" target="_blank">coliving</a> community in New York City where I met some lifelong mentors and friends.</p>
+            <p> Now I travel the world and work remotely for <a href="http://tokenly.com" target="_blank">Tokenly</a>, where using the <a href="https://en.wikipedia.org/wiki/Blockchain_(database)" target="_blank">blockchain</a>, we are redefining what ownership means on the web.</p>
+            <p>I believe websites should make users happy. View some of my happy little projects below, or scroll even farther and send me some words.</p>
+            <p>
+              Thanks for reading,
+              <br>
+              — A
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-area alt-bottom light" id="experience">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
             <div class="exp-item col-sm-4">
-              <div class="exp-title"><i class="fa fa-coffee"></i>
-                <h3>About Adam</h3>
+              <div class="exp-title wow bounceIn"><img class="exp--icon" src="./img/idea.png">
+                <h3>Creative</h3>
               </div>
               <div class="exp-content">
-                <p>I'm a self-taught developer/designer, with a passion for music, sushi and chess.</p>
+                <p>Builder at heart! Started with Lego now it's software.</p>
               </div>
             </div>
             <div class="exp-item col-sm-4">
-              <div class="exp-title"><i class="fa fa-code"></i>
-                <h3>Tech Talk</h3>
+              <div class="exp-title wow bounceIn"><img class="exp--icon" src="./img/web.png">
+                <h3>Technical</h3>
               </div>
               <div class="exp-content">
-                <p>You can often catch me on a Rails&nbsp;+&nbsp;AngularJS stack. However, I love learning new tools!</p>
+                <p>Love learning new tech, but I'll always use Sass.</p>
               </div>
             </div>
             <div class="exp-item col-sm-4">
-              <div class="exp-title"><i class="fa fa-eye"></i>
-                <h3>Eye for Design</h3>
+              <div class="exp-title wow bounceIn"><img class="exp--icon" src="./img/rocket.png">
+                <h3>Beautiful</h3>
               </div>
               <div class="exp-content">
-                <p>A great application is one that's easy to use. User experience means everything to me.</p>
+                <p>Design is about displaying information elegantly.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="skills" class="content-area dark">
+    <div class="content-area alt-bottom dark" id="skills">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <h2 class="text-center">The Toolbox</h2>
+            <h2 class="text-center">Toolbox</h2>
             <ul class="skill-list">
               <li class="skill-item"><a href="">HTML</a></li>
               <li class="skill-item"><a href="">CSS</a></li>
               <li class="skill-item"><a href="">SASS</a></li>
               <li class="skill-item"><a href="">JavaScript</a></li>
               <li class="skill-item"><a href="">jQuery</a></li>
+              <li class="skill-item"><a href="">MVC</a></li>
               <li class="skill-item"><a href="">AngularJS</a></li>
               <li class="skill-item"><a href="">Ruby</a></li>
               <li class="skill-item"><a href="">Ruby on Rails</a></li>
-              <li class="skill-item"><a href="">Bootstrap</a></li>
               <li class="skill-item"><a href="">Haml</a></li>
-              <li class="skill-item"><a href="">Jade</a></li>
+              <li class="skill-item"><a href="">Jade / Pug</a></li>
               <li class="skill-item"><a href="">Git / Github</a></li>
               <li class="skill-item"><a href="">Terminal</a></li>
               <li class="skill-item"><a href="">Responsive Design</a></li>
-              <li class="skill-item"><a href="">UI / UX</a></li>
+              <li class="skill-item"><a href="">User Experience</a></li>
               <li class="skill-item"><a href="">SEO</a></li>
               <li class="skill-item"><a href="">Bootstrap</a></li>
               <li class="skill-item"><a href="">Gulp</a></li>
               <li class="skill-item"><a href="">PostgreSQL</a></li>
               <li class="skill-item"><a href="">Adobe Photoshop</a></li>
               <li class="skill-item"><a href="">Heroku</a></li>
+              <li class="skill-item"><a href="">Sketch</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div id="projects" class="content-area light">
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <h2 class="text-center">Recent Work</h2>
-              <div class="project-items">
-                <div class="row project-item">
-                  <div class="project-image col-sm-6"><img src="./img/nycda-main.png"></div>
-                  <div class="project-content col-sm-6">
-                    <h3><a href="http://nycda.com" target="_blank">NYCDA Home</a></h3>
-                    <p>New York Code + Design Academy was in need of a web overhaul. I am currently lead developer and have planned, designed, and developed this project. It's purpose is to allow students to request information, apply, pay-for, and enroll into any of the courses offered at NYCDA. The entire process is automated and tracked for easier analytic collection.</p>
-                    <p class="toolbox">Ruby on Rails · Sass · JavaScript/jQuery · PostgreSQL · Haml · Git + Github · Stripe · Heroku</p>
-                  </div>
-                </div>
-                <div class="row project-item">
-                  <div class="project-image col-sm-6"><img src="./img/nycda-ams.png"></div>
-                  <div class="project-content col-sm-6">
-                    <h3><a href="http://nycda.com/study-in-amsterdam" target="_blank">NYCDA Amsterdam</a></h3>
-                    <p>New York Code + Design Academy launched a Web Development class in Amsterdam and I was asked to create a landing-page for this course. I developed this lander from scratch using nothing but an oversized spoon and some string.</p>
-                    <p class="toolbox">Jade · Sass · JavaScript/jQuery · Git + Github · Flexbox</p>
-                  </div>
-                </div>
-                <div class="row project-item">
-                  <div class="project-image col-sm-6"><img src="./img/itsraider.png"></div>
-                  <div class="project-content col-sm-6">
-                    <h3><a href="http://itsraider.com" target="_blank">Raider</a></h3>
-                    <p>Raider is my musical alias (not so much of an alias I suppose). I created this website to showcase my music as well as to offer a way to contact me. It was developed from the ground up using CSS-grid-framework, Skeleton.</p>
-                    <p class="toolbox">Jade · Sass · Responsive Design · Git + Github</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="projects--wrapper aside-area light alt-bottom" id="projects">
+      <div class="project--items">
+        <div class="project--item">
+          <div class="project--image"><img src="./img/tokenpass.png"></div>
+          <div class="project--content wow fadeInLeft">
+            <h3 class="project--heading"><a href="http://tokenpass.tokenly.com" target="_blank">Tokenpass</a></h3>
+            <p>Tokenly is building a suite of applications that is redefining what ownership means on the web. Tokenpass is a part of that suite and is specific to Token Controlled Access (TCA), which allows users to access content on the web based on the contents of their bitcoin wallet. I designed and implemented the user interface of this product with support from the other great developers at Tokenly.</p>
+            <ul class="project--tools"> 
+              <li>Sketch</li>
+              <li>Blade</li>
+              <li>JavaScript/jQuery</li>
+              <li>Sass</li>
+              <li>Vue.js</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project--item">
+          <div class="project--image"><img src="./img/nycda-main.png"></div>
+          <div class="project--content wow fadeInRight">
+            <h3 class="project--heading"><a href="http://nycda.com" target="_blank">NYCDA Home</a></h3>
+            <p>New York Code + Design Academy was in need of a web overhaul. As lead developer I planned, designed, and developed this project. It's purpose is to allow students to request information, apply, pay-for, and enroll into any of the courses offered at NYCDA. The entire process is automated and tracked for easier analytic collection.</p>
+            <ul class="project--tools"> 
+              <li>Ruby on Rails</li>
+              <li>Sass</li>
+              <li>JavaScript/jQuery</li>
+              <li>PostgreSQL</li>
+              <li>Haml</li>
+              <li>Git + Github</li>
+              <li>Stripe</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project--item">
+          <div class="project--image"><img src="./img/nycda-ams.png"></div>
+          <div class="project--content wow fadeInLeft">
+            <h3 class="project--heading"><a href="http://nycda.com/study-in-amsterdam" target="_blank">NYCDA Amsterdam</a></h3>
+            <p>New York Code + Design Academy launched a Web Development class in Amsterdam and I was asked to create a landing-page for this course. I developed this lander from scratch using nothing but an oversized spoon and some string.</p>
+            <ul class="project--tools"> 
+              <li>Jade</li>
+              <li>Sass</li>
+              <li>JavaScript/jQuery</li>
+              <li>Git + Github</li>
+              <li>Flexbox</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project--item">
+          <div class="project--image"><img src="./img/itsraider.png"></div>
+          <div class="project--content wow fadeInRight">
+            <h3 class="project--heading"><a href="http://itsraider.com" target="_blank">Raider</a></h3>
+            <p>Raider is my musical alias (not so much of an alias I suppose). I created this website to showcase my music as well as to offer a way to contact me. It was developed from the ground up using CSS-grid-framework, Skeleton.</p>
+            <ul class="project--tools"> 
+              <li>Jade</li>
+              <li>Sass</li>
+              <li>Responsive Design</li>
+              <li>Git + Github</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <div id="contact" class="content-area dark">
+    <div class="content-area alt-bottom dark" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <h2 class="text-center">Drop me a line...</h2>
+            <h2 class="form--heading">Drop Me A Line</h2>
             <form action="//formspree.io/adamjraider@gmail.com" method="POST">
               <div class="field">
                 <label for="name">Your name, please?</label>
@@ -153,19 +197,20 @@
                 <input type="text" name="_gotcha" style="display:none">
               </div>
               <div class="field text-center">
-                <input type="submit" value="Let's chat!" title="Let's chat!" class="button">
+                <input class="btn primary" type="submit" value="Let's chat!" title="Let's chat!">
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div id="footer" class="aside-area light">
+    <div class="footer aside-area light" id="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <div class="text-center">
-              <h4>Adam Raider</h4>
+              <div class="name-stamp">Adam Raider</div>
+              <p>made with ❤️ on <a href="http://github.com/adamraider/portfolio-2016">github</a></p>
               <ul class="nav-social">
                 <li><a href="http://github.com/adamraider" target="_blank"><i class="fa fa-github-square"></i></a></li>
                 <li><a href="http://twitter.com/ixraider" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
@@ -174,16 +219,10 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="text-right">
-              <p class="muted">&copy; 2016</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="./js/application.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js/application.js"></script>
   </body>
 </html>

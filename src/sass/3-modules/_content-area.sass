@@ -1,24 +1,45 @@
 .content-area
   padding: 90px 0px
   position: relative
-  &::after
-    position: absolute
-    width: 100%
-    top: 100%
-    content: ' '
-    z-index: 100
-  &:last-of-type:after
-    display: none
+  &.alt-bottom
+    padding: 90px 0px 60px
+
 .aside-area
   padding: 50px 0px
   position: relative
-.light
+  &.alt-bottom
+    padding: 50px 0px 20px
+
+.content-area, .aside-area
+  &.alt-bottom
+    &::after
+      position: absolute
+      width: 100%
+      bottom: -15px
+      content: ' '
+      z-index: 100
+      height: 35px
+      border-bottom: 2px solid $gray-lightest
+      transform: rotate(-1deg)
+      background-color: #fff
+
+
+.aside-area.light, .content-area.light
   background-color: $white
   color: $black
-.dark
+  &.alt-bottom::after
+    background-color: $white
+    
+.aside-area.dark, .content-area.dark
   background: linear-gradient(to left, #C9F5FF, #FFE9D2)
   color: $black
-.primary
+  &.alt-bottom::after
+    background: linear-gradient(to left, #C9F5FF, #FFE9D2)
+  
+.aside-area.primary, .content-area.primary
   color: $white
   background: #00d2ff
   background: linear-gradient(to left, #00d2ff, #3a7bd5)
+  &.alt-bottom::after
+    background: linear-gradient(to left, #00d2ff, #3a7bd5)
+  

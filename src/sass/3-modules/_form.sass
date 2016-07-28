@@ -1,27 +1,40 @@
+.form--heading
+  margin-bottom: 30px
+  padding-bottom: 8px
+  border-bottom: 2px solid $gray-dark
+  color: $gray-dark
+  text-transform: uppercase
+  font-weight: bold
+  letter-spacing: 1px
+  font-size: 28px
 form
-	.field
-		position: relative
-		label
-			width: auto
-			display: block
-			transition: all 0.1s ease-in
-			margin-bottom: 4px
-		input, textarea
-			transition: all 0.1s ease-in
-			background-color: $white
-			position: relative
-			z-index: 10
-			&:focus, &:valid
-				background-color: $brand-primary
-				color: $white
-		&:not(:last-of-type)
-			margin-bottom: 10px
-	input, textarea
-		padding: 6px 18px
-		font-size: 22px
-		width: 100%
-		border: none
-		outline: none
-		background: transparent
-		&:active, &:focus
-			outline: none
+  .field
+    position: relative
+    label
+      width: auto
+      display: block
+      transition: all 0.1s ease-in
+      margin-bottom: 4px
+      text-transform: uppercase
+      font-weight: bold
+      letter-spacing: 1px
+      font-size: 14px
+    input[type="text"], textarea
+      transition: all 0.1s ease-in
+      border-bottom: 2px solid $white
+      background-color: $white
+      position: relative
+      z-index: 10
+      &:focus, &:valid
+        border-bottom: 2px solid $brand-primary
+    &:not(:last-of-type)
+      margin-bottom: 10px
+  input, textarea
+    padding: 6px 18px
+    font-size: 22px
+    width: 100%
+    border: none
+    outline: none
+    background: transparent
+    &:active, &:focus
+      outline: none

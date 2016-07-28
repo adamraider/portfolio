@@ -1,0 +1,29 @@
+.text-rotator
+  height: 45px
+  overflow: hidden
+  .pre-text
+    float: left
+  ul.text-rotator--list
+    float: left
+    display: inline-block
+    margin: 0
+    padding: 0
+    overflow: hidden
+    li
+      display: block
+      box-sizing: border-box
+      list-style-type: none
+      text-align: left
+      padding-bottom: 16px
+      opacity: 1
+      height: 60px
+      span
+        text-align: left
+        white-space: nowrap
+  a
+    +fancyUnderline( $color: $white, $bgcolor: transparent )
+    transition: all 0.1s ease-in
+    color: $white
+    text-decoration: none 
+    &:hover
+      color: #fff

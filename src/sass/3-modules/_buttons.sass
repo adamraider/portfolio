@@ -1,4 +1,28 @@
-a.button
+@mixin btn-static
+	padding: 10px 20px
+	position: relative
+	background-color: transparent
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-weight: bold
+	transition: all 0.2s ease-in
+	text-decoration: none
+
+.btn.primary
+	+btn-static
+	background-color: $brand-primary
+	color: $white
+	&:hover
+		background-color: lighten($brand-primary, 20%)
+
+.button-cta
+	+btn-static
+	padding: 10px 20px
+	color: transparent
+	display: block
+	text-indent: -9999em
+	font-size: 17px
+	width: 280px
 	&::before, &::after
 		padding: 8px 20px
 		text-align: center
@@ -15,30 +39,18 @@ a.button
 		text-indent: 0
 	&::before
 		transform: rotateX(0deg)
-		border: 3px solid $brand-primary
-		color: $brand-primary
+		color: $white
+		border: 3px solid $white
 		opacity: 1
 		z-index: 6
 	&::after
 		transform: rotateX(-90deg)
-		background-color: $brand-primary
-		border: 3px solid $brand-primary
-		color: $white
+		background-color: $white
+		color: $black
+		border: 3px solid $white
 		opacity: 0.2
 		z-index: 10
-	padding: 10px 20px
-	color: transparent
-	display: block
-	text-indent: -9999em
-	position: relative
-	background-color: transparent
-	text-transform: uppercase
-	font-weight: bold
-	font-size: 17px
-	transition: all 0.2s ease-in
-	width: 280px
-	outline: none
-	text-decoration: none
+
 	&:hover, &:active, &:focus
 		&::before
 			opacity: 0
@@ -48,12 +60,3 @@ a.button
 			transform: rotateX(0deg)
 		outline: none
 		text-decoration: none
-a.button.button-white
-	&::before
-		color: $white
-		background-color: transparent
-		border: 3px solid $white
-	&::after
-		background-color: $white
-		color: $black
-		border: 3px solid $white

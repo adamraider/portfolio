@@ -3,6 +3,7 @@ $font-stack: Montserrat, "HelveticaNeue", Helvetica, Arial
 $brand-primary: #17afee
 $white: #FAFAFA
 $black: #131313
+$gray-dark: #272727
 $gray-light: rgb(118, 118, 118)
 $gray-lighter: #919191
 $gray-lightest: #CECECE
@@ -11,3 +12,15 @@ $selection-color: $brand-primary
 $screen-sm-min: 768px
 $screen-md-min: 992px
 $screen-lg-min: 1200px
+
+@mixin mobile
+  @media (min-width: #{$screen-sm-min})
+    @content
+
+@mixin tablet
+  @media (min-width: #{$screen-md-min})
+    @content
+
+@mixin desktop
+  @media (min-width: #{$screen-lg-min})
+    @content

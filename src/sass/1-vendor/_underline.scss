@@ -1,0 +1,14 @@
+// Use CSS gradient and text shadow to create line that breaks for descenders
+// Inspired by https://medium.com/designing-medium/7c03a9274f9
+@mixin fancyUnderline( $color: currentColor, $bgcolor: #fff ) {
+  background-image: linear-gradient( to bottom, $bgcolor 50%, $color 50%  );
+  background-position: 0 89%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  text-decoration: none;
+  // Add white space between underline and descenders
+  text-shadow: -2px 0px 0px $bgcolor,
+               -1px 0px 0px $bgcolor,
+                1px 0px 0px $bgcolor,
+                2px 0px 0px $bgcolor;
+}

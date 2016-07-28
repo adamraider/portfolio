@@ -8,9 +8,9 @@ $(document).ready(function(){
   // }, 1000, "swing")
 
   var i = 0
-  var rotator = $("ul#text_rotator")
-  var rotator_items_parent = $("ul#text_rotator li")
-  var rotator_items = $("ul#text_rotator li span")
+  var rotator = $("#text-rotator--list")
+  var rotator_items_parent = $("#text-rotator--list li")
+  var rotator_items = $("#text-rotator--list li span")
 
   startRotator()
 
@@ -40,4 +40,22 @@ $(document).ready(function(){
       'width' : current_item.width()
     }, 1400, "swing")
   }
+
+
 })
+
+// Initialize wow animations
+new WOW().init();
+
+// Emoji Support
+window.onload = function() {
+
+  // Set the size of the rendered Emojis
+  // This can be set to 16x16, 36x36, or 72x72
+  twemoji.size = '16x16';
+
+  // Parse the document body and
+  // insert <img> tags in place of Unicode Emojis
+  twemoji.parse(document.body);
+
+}

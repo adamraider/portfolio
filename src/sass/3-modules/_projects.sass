@@ -1,54 +1,48 @@
-#projects
-	color: $black
-	.project-items
-		margin-top: 40px
-	.project-item
-		margin: 0 0 40px 0
-		.project-image
+.projects--wrapper
+
+	.project--item
+		display: flex
+		align-items: center
+		flex-direction: column
+		margin-bottom: 30px
+		+tablet
+			margin-bottom: 0
+			flex-direction: row
+			&:nth-child(odd)
+				flex-direction: row-reverse
+		.project--image
+			+tablet
+				width: 50%
 			img
 				width: 100%
-		.project-content
-			padding: 0 40px
+				max-width: 520px
+				display: block
+				margin: 0 auto
+	    	
+		.project--heading
+			font-size: 24px
+			text-transform: uppercase
+			letter-spacing: 1px
+			color: $gray-dark
+			a
+				color: $gray-dark
+		.project--content
+			padding: 10px 25px
+			+tablet
+				padding: 60px 80px
+				width: 50%
 			hr
 				margin: 40px 20px 0 20px
 				padding-bottom: 2px
-		.toolbox
+		.project--tools
 			color: $gray-lighter
-			font-size: 13px
-		ul.tags
+			font-size: 14px
 			margin: 0
-			padding: 0 20px
-			text-align: left
-			$tag-height: 32px
+			padding: 0
 			li
-				display: inline-block
-				padding: 0 12px
-				height: $tag-height
-				line-height: $tag-height
-				background-color: $black
-				color: $white
-				margin-right: 15px
-				margin-bottom: 5px
-				font-size: 14px
-				position: relative
-				&:before
-					content: ''
-					position: absolute
-					top: 0
-					right: 100%
-					bottom: 0
-					width: 0
-					height: 0
-					border-bottom: $tag-height solid $black
-					border-left: 12px solid transparent
-				&:after
-					content: ''
-					position: absolute
-					top: 0
-					left: 100%
-					bottom: 0
-					width: 0
-					height: 0
-					border-top: $tag-height solid $black
-					border-right: 12px solid transparent
-	@media (min-width: $screen-sm-min){}
+				float: left
+				list-style-type: none
+				&:not(:last-child)
+					&::after
+						content: '·'
+						padding: 0 6px
