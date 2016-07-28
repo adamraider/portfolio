@@ -4128,7 +4128,7 @@ form input, form textarea {
   width: 100%;
   height: 100%; }
 
-ul.skill-list {
+.skill--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4145,40 +4145,40 @@ ul.skill-list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0; }
-  ul.skill-list li.skill-item {
+  .skill--list .skill--item {
     position: relative;
     display: inline-block;
     color: #131313;
     margin: 0px 4px 8px 4px;
     padding: 4px 10px;
     list-style-type: none; }
-    ul.skill-list li.skill-item::after {
+    .skill--list .skill--item::after {
       content: '';
       display: block;
       width: 100%;
       background-color: #131313;
       height: 1px; }
-    ul.skill-list li.skill-item a {
+    .skill--list .skill--item a {
       display: block;
       color: #131313;
       pointer-events: none; }
-      ul.skill-list li.skill-item a:hover, ul.skill-list li.skill-item a:focus, ul.skill-list li.skill-item a:active {
+      .skill--list .skill--item a:hover, .skill--list .skill--item a:focus, .skill--list .skill--item a:active {
         text-decoration: none; }
 
 .footer {
   padding-top: 100px; }
-  .footer .name-stamp {
+  .footer .footer--name-stamp {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
     color: #686868;
     font-size: 18px;
-    margin-bottom: 6px;
+    margin-bottom: 15px;
     color: #272727;
     padding: 6px 20px;
     border: 2px solid #272727;
     display: inline-block; }
-  .footer ul.nav-social {
+  .footer .footer--social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4190,12 +4190,12 @@ ul.skill-list {
             align-items: center;
     margin: 0;
     padding: 0; }
-    .footer ul.nav-social li {
+    .footer .footer--social li {
       float: left;
       list-style-type: none;
       margin: 0 10px;
       font-size: 30px; }
-      .footer ul.nav-social li a {
+      .footer .footer--social li a {
         -webkit-transition: all 0.1s ease-in;
         transition: all 0.1s ease-in; }
 
@@ -4210,7 +4210,8 @@ ul.skill-list {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding: 30px 70px; }
   @media (min-width: 992px) {
     .projects--wrapper .project--item {
       margin-bottom: 0;
@@ -4242,7 +4243,7 @@ ul.skill-list {
     padding: 10px 25px; }
     @media (min-width: 992px) {
       .projects--wrapper .project--item .project--content {
-        padding: 60px 80px;
+        padding: 0 30px;
         width: 50%; } }
     .projects--wrapper .project--item .project--content hr {
       margin: 40px 20px 0 20px;
@@ -4259,27 +4260,27 @@ ul.skill-list {
         content: '·';
         padding: 0 6px; }
 
-#experience .exp-item {
+.exp--wrapper .exp--item {
   padding: 0 10px;
   text-align: center;
   margin-bottom: 40px; }
-  #experience .exp-item .exp-title {
+  .exp--wrapper .exp--item .exp--title {
     margin: 0 0 20px 0; }
-    #experience .exp-item .exp-title i {
+    .exp--wrapper .exp--item .exp--title i {
       font-size: 66px;
       color: #767676; }
 
-#experience .exp-content {
+.exp--wrapper .exp--content {
   width: 100%;
   text-align: center; }
-  #experience .exp-content p {
+  .exp--wrapper .exp--content p {
     max-width: 400px;
     margin: 0 auto; }
 
-@media (min-width: 768px) {
-  #experience .exp-item {
-    margin-bottom: 0; } }
-
-#experience .exp--icon {
+.exp--wrapper .exp--icon {
   max-height: 120px;
   margin: 0 auto 20px; }
+
+@media (min-width: 768px) {
+  .exp--wrapper .exp--item {
+    margin-bottom: 0; } }
