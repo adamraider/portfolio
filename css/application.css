@@ -3869,8 +3869,7 @@ img.emoji {
 .hero {
   width: 100%;
   height: 400px;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   .hero .hero--heading {
     font-size: 3em;
     font-weight: bold; }
@@ -3908,6 +3907,19 @@ img.emoji {
     font-weight: 200;
     margin-bottom: 30px;
     text-align: center; }
+  .hero .hero--avatar {
+    max-width: 120px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -60px;
+    overflow: hidden;
+    z-index: 100;
+    border: 2px solid #FAFAFA;
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
+    .hero .hero--avatar img {
+      width: 100%; }
 
 .content-area {
   padding: 90px 0px;
@@ -4211,7 +4223,7 @@ form input, form textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 30px;
-  padding: 30px 70px; }
+  padding: 30px 10px; }
   @media (min-width: 992px) {
     .projects--wrapper .project--item {
       margin-bottom: 0;
@@ -4240,7 +4252,7 @@ form input, form textarea {
     .projects--wrapper .project--item .project--heading a {
       color: #272727; }
   .projects--wrapper .project--item .project--content {
-    padding: 10px 25px; }
+    padding: 10px 15px; }
     @media (min-width: 992px) {
       .projects--wrapper .project--item .project--content {
         padding: 0 30px;
