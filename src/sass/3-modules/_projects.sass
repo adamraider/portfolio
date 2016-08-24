@@ -5,14 +5,19 @@
 		flex-direction: column
 		margin-bottom: 30px
 		padding: 30px 10px
+		margin: 0 auto
+		&:not(:last-of-type)
+			margin-bottom: 30px
 		+tablet
 			margin-bottom: 0
 			flex-direction: row
 			&:nth-child(odd)
 				flex-direction: row-reverse
 		.project--image
+			margin-bottom: 10px
 			+tablet
 				width: 50%
+				margin-bottom: 0
 			img
 				width: 100%
 				max-width: 520px
@@ -28,8 +33,10 @@
 				color: $gray-dark
 		.project--content
 			padding: 10px 15px
+			max-width: 680px
+			margin: 0 auto
 			+tablet
-				padding: 0 30px
+				padding: 0 60px
 				width: 50%
 			hr
 				margin: 40px 20px 0 20px
