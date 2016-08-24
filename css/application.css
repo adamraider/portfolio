@@ -4211,7 +4211,10 @@ form input, form textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 30px;
-  padding: 30px 10px; }
+  padding: 30px 10px;
+  margin: 0 auto; }
+  .projects--wrapper .project--item:not(:last-of-type) {
+    margin-bottom: 30px; }
   @media (min-width: 992px) {
     .projects--wrapper .project--item {
       margin-bottom: 0;
@@ -4224,14 +4227,17 @@ form input, form textarea {
         -webkit-box-direction: reverse;
             -ms-flex-direction: row-reverse;
                 flex-direction: row-reverse; } }
-  @media (min-width: 992px) {
-    .projects--wrapper .project--item .project--image {
-      width: 50%; } }
-  .projects--wrapper .project--item .project--image img {
-    width: 100%;
-    max-width: 520px;
-    display: block;
-    margin: 0 auto; }
+  .projects--wrapper .project--item .project--image {
+    margin-bottom: 10px; }
+    @media (min-width: 992px) {
+      .projects--wrapper .project--item .project--image {
+        width: 50%;
+        margin-bottom: 0; } }
+    .projects--wrapper .project--item .project--image img {
+      width: 100%;
+      max-width: 520px;
+      display: block;
+      margin: 0 auto; }
   .projects--wrapper .project--item .project--heading {
     font-size: 24px;
     text-transform: uppercase;
@@ -4240,10 +4246,12 @@ form input, form textarea {
     .projects--wrapper .project--item .project--heading a {
       color: #272727; }
   .projects--wrapper .project--item .project--content {
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    max-width: 680px;
+    margin: 0 auto; }
     @media (min-width: 992px) {
       .projects--wrapper .project--item .project--content {
-        padding: 0 30px;
+        padding: 0 60px;
         width: 50%; } }
     .projects--wrapper .project--item .project--content hr {
       margin: 40px 20px 0 20px;
