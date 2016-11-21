@@ -10,7 +10,6 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     reload = browserSync.reload,
     webpack = require('gulp-webpack'),
-    imagemin = require('gulp-imagemin'),
     responsive = require('gulp-responsive'),
     watch = require('gulp-watch');
 
@@ -62,7 +61,6 @@ gulp.task('scripts', function () {
 
 gulp.task('images', function () {
   return gulp.src(IMAGE_SRC + '/*')
-    // .pipe(imagemin())
     .pipe(responsive({
       'hero.jpg': {
         width: 1400,

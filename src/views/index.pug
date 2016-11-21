@@ -3,7 +3,7 @@ html(lang="en")
   head
     meta(charset="utf-8")
     title Adam Raider // Designer, Developer
-    
+
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
@@ -23,7 +23,7 @@ html(lang="en")
     .hero
       .hero--content.wow.fadeIn
         .flex-wrapper
-          h1.hero--heading Hi! I'm Adam,
+          .hero--heading Hi! I'm Adam,
           #text-rotator.text-rotator.hero--sub.hidden-xs.hidden-sm
             span.pre-text and I&nbsp;
             ul#text-rotator--list.text-rotator--list
@@ -43,7 +43,7 @@ html(lang="en")
         .row
           .col-md-10.col-md-offset-1
             h2 Hi there,
-            p I'm a developer + designer for all things web. I'm also an #[a(href="http://youtube.com/ixaider" target="_blank") electronic music producer], amateur chess player, #[a(href="https://en.wikipedia.org/wiki/Digital_nomad" target="_blank") digital nomad] and sushi connoisseur. 
+            p I'm a developer + designer for all things web. I'm also an #[a(href="http://youtube.com/ixraider" target="_blank") electronic music producer], amateur chess player, #[a(href="https://en.wikipedia.org/wiki/Digital_nomad" target="_blank") digital nomad] and sushi connoisseur.
             p I believe websites should make users happy. View some of my happy little projects below, or scroll even farther and send me some words.
             p.
               Thanks for reading,
@@ -110,7 +110,7 @@ html(lang="en")
           .project--content.wow.fadeInLeft
             h3.project--heading: a(href="http://tokenpass.tokenly.com" target="_blank") Tokenpass
             p Tokenly is building a suite of applications that is redefining what ownership means on the web. Tokenpass is a part of that suite and is specific to Token Controlled Access (TCA), which allows users to access content on the web based on the contents of their bitcoin wallet. I designed and implemented the user interface of this product with support from the other great developers at Tokenly.
-            ul.project--tools 
+            ul.project--tools
               li Sketch
               li Blade
               li JavaScript/jQuery
@@ -123,7 +123,7 @@ html(lang="en")
           .project--content.wow.fadeInRight
             h3.project--heading: a(href="http://nycda.com" target="_blank") NYCDA Home
             p New York Code + Design Academy was in need of a web overhaul. As lead developer I planned, designed, and developed this project. It's purpose is to allow students to request information, apply, pay-for, and enroll into any of the courses offered at NYCDA. The entire process is automated and tracked for easier analytic collection.
-            ul.project--tools 
+            ul.project--tools
               li Ruby on Rails
               li Sass
               li JavaScript/jQuery
@@ -139,25 +139,25 @@ html(lang="en")
           .project--content.wow.fadeInLeft
             h3.project--heading: a(href="http://nycda.com/study-in-amsterdam" target="_blank") NYCDA Amsterdam
             p New York Code + Design Academy launched a Web Development class in Amsterdam and I was asked to create a landing-page for this course. I developed this lander from scratch using nothing but an oversized spoon and some string.
-            ul.project--tools 
+            ul.project--tools
               li Jade
               li Sass
               li JavaScript/jQuery
               li Git + Github
               li Flexbox
-            
+
         .project--item
           .project--image
             img(src="./img/itsraider.png")
           .project--content.wow.fadeInRight
             h3.project--heading: a(href="http://itsraider.com" target="_blank") Raider
             p Raider is my musical alias (not so much of an alias I suppose). I created this website to showcase my music as well as to offer a way to contact me. It was developed from the ground up using CSS-grid-framework, Skeleton.
-            ul.project--tools 
+            ul.project--tools
               li Jade
               li Sass
               li Responsive Design
               li Git + Github
-                    
+
     #contact.content-area.alt-bottom.dark
       .container
         .row
@@ -178,19 +178,19 @@ html(lang="en")
                 input(type="text" name="_gotcha" style="display:none")
               .field.text-center
                 input.btn.primary(type="submit" value="Let's chat!" title="Let's chat!")
-                  
+
     .footer.aside-area.light
       .container
         .row
           .col-md-6.col-md-offset-3
             .text-center
-              .footer--name-stamp Adam Raider
-              p made with ❤️ on #[a(href="http://github.com/adamraider/portfolio-2016") github]
+              h1.footer--name-stamp Adam Raider
+              p made with ❤️ on #[a(href="http://github.com/adamraider/portfolio") github]
               ul.footer--social
                 li: a(href="http://github.com/adamraider" target="_blank"): i.fa.fa-github-square
                 li: a(href="http://twitter.com/ixraider" target="_blank"): i.fa.fa-twitter-square
                 li: a(href="https://www.linkedin.com/in/adamjraider" target="_blank"): i.fa.fa-linkedin-square
-    
+
     script(src="https://code.jquery.com/jquery-2.1.4.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
     script(src="./js/application.min.js")

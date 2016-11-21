@@ -1,10 +1,10 @@
 {
-  "name": "AdamRaiderPortfolio2016",
-  "version": "1.0.0",
+  "name": "AdamRaiderPortfolio",
+  "version": "1.0.1",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adamraider/portfolio-2016.git"
+    "url": "https://github.com/adamraider/portfolio.git"
   },
   "author": "Adam Raider",
   "license": "MIT",
@@ -14,6 +14,7 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-coffee": "^2.3.1",
     "gulp-concat": "^2.5.2",
+    "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.0.3",
     "gulp-rename": "^1.2.2",
     "gulp-responsive": "^2.4.0",

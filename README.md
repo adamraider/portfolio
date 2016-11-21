@@ -1,8 +1,14 @@
-Adam's 2016 Portfolio
+Adam's Portfolio
 ==============
-A one-stop-shop for my web development work. Designed with love using Bootstrap, Gulp, and BrowserSync.
+A one-stop-shop for my web development work.
 
-Deploy to gh-pages:
+## Installation
+```bash
+npm install
+gulp
+```
+
+## Deploy to gh-pages:
 ```bash
 ./deploy.sh
 ```
